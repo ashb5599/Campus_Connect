@@ -1,0 +1,12 @@
+{
+  "name": "campus-connect",
+  "version": "1.0.0",
+  "description": "A simple Campus Connect web application built for a Git workflow assignment.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

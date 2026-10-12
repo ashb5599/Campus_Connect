@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Connect | Campus Connect</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav><span class="brand">Buddy<span>Finder</span></span><span class="nav-note">Campus Connect</span></nav>
+    <div class="hero-copy">
+      <p class="eyebrow">CAMPUS CONNECT PROJECT</p>
+      <h1>Campus Connect</h1>
+      <p>A simple website to register campus club members and find travel buddies.</p>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="panel">
+      <div class="section-heading"><span class="number">01</span><div><h2>Campus Club Member</h2><p>Add your details to connect with your campus community.</p></div></div>
+      <form id="member-form">
+        <label>Full name<input name="name" placeholder="Enter your name" required></label>
+        <label>Email address<input name="email" type="email" placeholder="you@example.com" required></label>
+        <label>Club name<input name="clubName" placeholder="e.g. Coding Club"></label>
+        <div class="two-col">
+          <label>Year of study<select name="year"><option value="">Select year</option><option>1st Year</option><option>2nd Year</option><option>3rd Year</option><option>4th Year</option></select></label>
+          <label>Role<input name="role" placeholder="e.g. Member"></label>
+        </div>
+        <label>Interests<textarea name="interests" rows="3" placeholder="Technology, music, trekking..."></textarea></label>
+        <button type="submit">Add member <span>↗</span></button>
+      </form>
+      <p id="member-message" class="message" role="status"></p>
+    </section>
+
+    <section class="panel accent-panel">
+      <div class="section-heading"><span class="number">02</span><div><h2>Travel Campus Connect</h2><p>Planning a trip? Find someone heading the same way.</p></div></div>
+      <form id="travel-form">
+        <label>Your name<input name="name" placeholder="Enter your name" required></label>
+        <label>Destination<input name="destination" placeholder="Where are you going?" required></label>
+        <label>Travel date<input name="travelDate" type="date"></label>
+        <button type="submit">Find a travel buddy <span>↗</span></button>
+      </form>
+      <p id="travel-message" class="message" role="status"></p>
+      <div class="note"><strong>Assignment demo</strong><p>Entries are stored in memory while the server is running. This starter project does not use a database.</p></div>
+    </section>
+
+    <section class="panel records">
+      <div class="section-heading"><span class="number">03</span><div><h2>Latest connections</h2><p>Entries submitted during this running session.</p></div></div>
+      <div class="record-grid"><div><h3>Campus members</h3><ul id="members-list"><li class="empty">No members added yet.</li></ul></div><div><h3>Travel plans</h3><ul id="travel-list"><li class="empty">No travel plans yet.</li></ul></div></div>
+    </section>
+  </main>
+  <footer>Campus Connect · Built with Node.js, Express and Git</footer>
+  <script src="/script.js"></script>
+</body>
+</html>
